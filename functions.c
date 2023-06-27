@@ -169,7 +169,7 @@ int print_binary(va_list types, char buffer[],
 	c = 2147483648; /* (2 ^ 31) */
 	b[0] = p / c;
 	for (k = 1; k < 32; k++)
-	{	
+	{
 		c /= 2;
 		b[k] = (p / c) % 2;
 	}
